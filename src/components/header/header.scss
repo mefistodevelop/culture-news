@@ -1,0 +1,42 @@
+@import '../../scss/variables.scss';
+
+.header {
+  padding-top: 3.75rem;
+  padding-bottom: 2.9375rem;
+  background-color: #fff;
+
+  &__logo {
+    margin: 0 auto 2.875rem;
+    font-family: 'Playfair Display';
+    color: #000;
+    font-weight: 900;
+    font-size: 2.1875rem;
+    line-height: 2.9375rem;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  &__navigation-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &__navigation-link {
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+    letter-spacing: 2px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
+  }
+}
