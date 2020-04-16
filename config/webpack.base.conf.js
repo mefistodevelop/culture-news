@@ -10,7 +10,7 @@ const PATHS = {
   assets: 'assets/' 
 }
 
-const PAGES_DIR = `${PATHS.src}/pug/pages`;
+const PAGES_DIR = `${PATHS.src}/pug`;
 const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'));
 
 module.exports = {
@@ -114,8 +114,8 @@ module.exports = {
     }),
     new copyWebpackPlugin([
       { from: `${PATHS.src}/img/`, to: `${PATHS.assets}img/` },
-      { from: `${PATHS.src}/fonts/`, to: `${PATHS.assets}fonts/` },
-      { from: `${PATHS.src}/static/`, to: '' },
+      // { from: `${PATHS.src}/fonts/`, to: `${PATHS.assets}fonts/` },
+      // { from: `${PATHS.src}/static/`, to: '' },
     ]),
 
     // Automatic creation any html pages
