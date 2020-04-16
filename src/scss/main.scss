@@ -1,2 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway&display=swap&subset=cyrillic');
 @import './variables.scss';
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1174px;
+  margin: 0 auto;
+}
