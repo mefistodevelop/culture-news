@@ -1,0 +1,23 @@
+.poster {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  width: 23.125rem;
+  height: 29.9375rem;
+
+  &__title {
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 1.875rem;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+}

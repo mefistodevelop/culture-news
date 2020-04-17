@@ -1,0 +1,7 @@
+include ../button/button
+
+mixin poster({ title, image, button } = {})
+  .poster(style=`background: url(${image})`)
+    h3.poster__title= title
+    .poster__button
+      +button
