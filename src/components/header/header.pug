@@ -1,8 +1,14 @@
 mixin header
   header.header
     .container
+      .header__burger.js-header__burger
+        .header__burger-line
+        .header__burger-line
+        .header__burger-line
+
       .header__logo Новости культуры
-      nav.header__navigation
+      nav.header__navigation.js-header__navigation
+        button.header__close-button.js-header__close-button &times;
         ul.header__navigation-list
           li.header__navigation-item
             a.header__navigation-link(href="blank.link") новости
@@ -22,3 +28,5 @@ mixin header
             a.header__navigation-link(href="blank.link") религия
           li.header__navigation-item
             a.header__navigation-link(href="blank.link") живопись
+      
+      .fade

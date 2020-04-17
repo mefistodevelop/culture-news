@@ -1,9 +1,40 @@
 @import '../../scss/variables.scss';
 
 .header {
+  position: relative;
   padding-top: 3.75rem;
   padding-bottom: 2.9375rem;
   background-color: #fff;
+
+  @media (max-width: 992px) {
+    padding-top: 0;
+  }
+
+
+  &__burger {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: $accent;
+
+    @media (max-width: 992px) {
+      display: flex;
+    }
+  }
+
+  &__burger-line {
+    margin-bottom: 4px;
+    width: 23px;
+    height: 3px;
+    background: #DADADA;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 
   &__logo {
     margin: 0 auto 2.875rem;
@@ -14,6 +45,50 @@
     line-height: 2.9375rem;
     letter-spacing: 1px;
     text-align: center;
+
+    @media (max-width: 576px) {
+      width: 50%;
+    }
+  }
+
+  &__navigation {
+    padding: 0 10px;
+
+    @media (max-width: 992px) {
+      position: absolute;
+      top: 0;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      width: 320px;
+      height: 100vh;
+      background-color: #fff;
+      overflow: scroll;
+      z-index: 2;
+
+      &_visible {
+        display: flex;
+      }
+    }
+  }
+
+  &__close-button {
+    display: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    width: 44px;
+    height: 44px;
+    border: none;
+    font-size: 44px;
+    background-color: #fff;
+    color: #D7D9DF;
+    cursor: pointer;
+
+    @media (max-width: 992px) {
+      display: block;
+    }
   }
 
   &__navigation-list {
@@ -22,6 +97,17 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
+
+    @media (max-width: 850px) {
+      flex-direction: column;
+    }
+  }
+
+  &__navigation-item {
+    @media (max-width: 850px) {
+      width: 100%;
+      height: 57px;
+    }
   }
 
   &__navigation-link {
@@ -38,5 +124,23 @@
     &:focus {
       color: $accent;
     }
+
+    @media (max-width: 992px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.fade {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $dark;
+
+  &_visible {
+    display: block;
   }
 }
