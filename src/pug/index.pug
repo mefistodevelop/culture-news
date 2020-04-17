@@ -1,8 +1,99 @@
+include ../components/header/header
+include ../components/footer/footer
+include ../components/promo/promo
+include ../components/button/button
+include ../components/poster/poster
+include ../components/news-card/news-card
+include ../components/review/review
+
 <!DOCTYPE html>
 html(lang="ru")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title veles
+    title Новости культуры
   body
-    
+    +header
+    //- +promo
+    //- .container
+    //-   main.content
+    //-     .content__main
+    //-       section.content__news
+    //-         h2.content__title новости
+    //-         .content__news-cards
+    //-           .content__news-card-big
+    //-             +news-card({
+    //-               title: 'Новости культуры России и всего мира',
+    //-               image: 'assets/img/news.jpg',
+    //-               text: 'В минувшие выходные в Москве на фестивале «Оберег» вручили первую премию Russian World Music Awards',
+    //-               style: 'big'
+    //-             })
+                
+    //-           .content__news-card-small
+    //-             .content__news-card
+    //-               +news-card({
+    //-                 title: 'Открытие нового памятника Евгению Леонову',
+    //-                 image: 'assets/img/leonov.jpg',
+    //-                 text: '10 сентября в 15:00 был открыт памятник писателю'
+    //-               })
+
+    //-             .content__news-card
+    //-               +news-card({
+    //-                 title: 'Беседы с писателями ',
+    //-                 image: 'assets/img/writers.jpg',
+    //-                 text: 'Русские писатели говорят о важности искусства'
+    //-               })
+    //-             .content__news-card
+    //-               +news-card({
+    //-                 title: 'День и ночь св. Патрика: встреча старых друзей',
+    //-                 image: 'assets/img/patrick.png',
+    //-                 text: 'Не Джойсом единым живет Ирландия!'
+    //-               })
+
+    //-       section.reviews
+    //-         h2.content__title обзоры
+    //-         .review-cards
+    //-           +review({
+    //-             image: 'assets/img/monparnas.jpg',
+    //-             title: '«Шальные годы» Монпарнаса',
+    //-             text: 'В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»',
+    //-           })
+
+    //-           +review({
+    //-             image: 'assets/img/monparnas.jpg',
+    //-             title: 'Анатомия за 30 секунд',
+    //-             text: 'Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно-популярной литературе заметно вырос',
+    //-           })
+
+    //-           +review({
+    //-             image: 'assets/img/russian-ballets.jpg',
+    //-             title: 'Русские балетные сезоны',
+    //-             text: 'В Новом Иерусалиме стартовал необычный культурно-развлекательный спектакль, который покажут в новом театре',
+    //-           })
+
+    //-           +review({
+    //-             image: 'assets/img/spherical-fools.jpg',
+    //-             title: 'Сферические чудаки',
+    //-             text: 'Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»',
+    //-           })
+
+    //-       .content__carousel carousel
+
+    //-     .posters
+    //-       .posters__item
+    //-         +poster({
+    //-           title: 'ВОЗДУШНЫЕ ШАРЫ',
+    //-           image: 'assets/img/balloons.jpg',
+    //-           theme: 'light',
+    //-         })
+    //-       .posters__item
+    //-         +poster({
+    //-           title: 'НЕОБЫЧНАЯ ФОТОСЕССИЯ',
+    //-           image: 'assets/img/photosession.jpg',
+    //-         })
+    //-       .posters__item
+    //-         +poster({
+    //-           title: 'Выставка птиц',
+    //-           image: 'assets/img/birds.jpg',
+    //-         })
+    //- +footer
