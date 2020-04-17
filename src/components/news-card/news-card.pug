@@ -1,0 +1,10 @@
+mixin news-card({ image, title, text, style } = {})
+  - let mod = ''
+  - if (style === 'big')
+  - mod = 'news-card_big'
+
+  div(class=`news-card ${mod}`)
+    img.news-card__image(src= image)
+    .news-card__info
+      h3.news-card__title= title
+      p.news-card__text= text
