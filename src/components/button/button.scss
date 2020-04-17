@@ -1,0 +1,27 @@
+@import '../../scss/variables.scss';
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10.625rem;
+  height: 2.9375rem;
+  background-color: $dark;
+  font-family: $Raleway;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  border: 2px solid $accent;
+
+  &__arrow {
+    margin-left: 10px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 2px 1px $accent;
+  }
+}
