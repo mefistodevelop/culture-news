@@ -1,0 +1,6 @@
+mixin review({ image, alt, title, text } = {})
+  .review
+    img.review__image(src= image, alt= alt || 'review image')
+    .review__info
+      h2.review__title= title
+      p.review__text= text
