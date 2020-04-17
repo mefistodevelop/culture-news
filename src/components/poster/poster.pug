@@ -1,7 +1,10 @@
 include ../button/button
 
-mixin poster({ title, image, button } = {})
+mixin poster({ title, image, theme } = {})
+  - const titleMod = theme ? `poster__title_${theme}` : ''
+  - const buttonMod = theme ? 'accent' : ''
+
   .poster(style=`background: url(${image})`)
-    h3.poster__title= title
+    h3(class=`poster__title ${titleMod}`)= title
     .poster__button
-      +button
+      +button(buttonMod)

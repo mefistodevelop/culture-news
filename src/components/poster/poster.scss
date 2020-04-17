@@ -15,6 +15,10 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    &_light {
+      color: #000;
+    }
   }
 
   &__button {
